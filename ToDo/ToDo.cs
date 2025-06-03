@@ -10,7 +10,14 @@ namespace EspacioTareas
         {
             this.TareaID = TareaID;
             this.Descripcion = Descripcion;
-            this.Duracion = Duracion;
+            if (Duracion >= 10 && Duracion <= 100)
+            {
+                this.Duracion = Duracion;
+            }
+            else
+            {
+                this.Duracion = 10;
+            }
         }
     }
 }
