@@ -15,12 +15,10 @@ do
         {
             calculadora.Limpiar();
             Console.WriteLine("Limpiado con éxito");
-            break;
-        }
+        }else
         if (ingresado == "historial")
         {
             calculadora.MostrarHistorial();
-            break;
         }
         else
         {
@@ -28,7 +26,6 @@ do
             Console.Write($"A {calculadora.Resultado} {ingresado} ");
             if (double.TryParse(Console.ReadLine(), out num))
             {
-
                 switch (ingresado)
                 {
                     case "sumar":
@@ -55,6 +52,5 @@ do
             }
         }
     }
-
 } while (ingresado != "salir");
 Console.Write("Finalizando programa...");

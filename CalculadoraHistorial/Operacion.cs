@@ -14,7 +14,6 @@ namespace EspacioOperacion
         Limpiar
     }
 
-
         private double resultadoAnterior;
         private double nuevoValor;
         private TipoOperacion operacion1;
@@ -29,10 +28,5 @@ namespace EspacioOperacion
             this.nuevoValor = nuevoValor;
             this.operacion1 = operacion1;
         }
-
-
-
     }
-
-
 }
